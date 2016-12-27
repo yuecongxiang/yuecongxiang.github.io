@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CICI</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yucongxiang.com/"/>
+  <updated>2016-12-27T02:59:42.184Z</updated>
+  <id>http://yucongxiang.com/</id>
+  
+  <author>
+    <name>Congxiang Yue</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="http://yucongxiang.com/2016/12/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yucongxiang.com/2016/12/26/我的第一篇博客/</id>
+    <published>2016-12-26T15:47:46.000Z</published>
+    <updated>2016-12-27T02:59:42.184Z</updated>
+    
+    <content type="html"><![CDATA[<p>  在经过了几天的折腾后，终于把自己的第一个博客搭建了起来。</p>
+<p>  欢迎大家常来。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  在经过了几天的折腾后，终于把自己的第一个博客搭建了起来。&lt;/p&gt;
+&lt;p&gt;  欢迎大家常来。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yucongxiang.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="life" scheme="http://yucongxiang.com/tags/life/"/>
+    
+  </entry>
+  
+</feed>
