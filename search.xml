@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title><![CDATA[基于HEXO和github搭建博客]]></title>
-      <url>%2F2016%2F12%2F26%2F%E5%9F%BA%E4%BA%8EHEXO%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
-      <content type="text"></content>
+      <title><![CDATA[我的第一篇博客]]></title>
+      <url>%2F2016%2F12%2F26%2F%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%2F</url>
+      <content type="text"><![CDATA[在经过了几天的折腾后，终于把自己的第一个博客搭建了起来。 欢迎大家常来。]]></content>
     </entry>
 
     
