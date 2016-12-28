@@ -284,120 +284,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/12/26/我的第一篇博客/" itemprop="url">
-                  我的第一篇博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-26T23:47:46+08:00" content="2016-12-26">
-              2016-12-26
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>  在经过了几天的折腾后，终于把自己的第一个博客搭建了起来。</p>
-<p>  欢迎大家常来。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/12/26/JAVA中的内部类/" itemprop="url">
                   JAVA中的内部类
                 </a>
@@ -468,7 +354,7 @@
 <li>匿名内部类</li>
 </ol>
 <hr>
-<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用-gt-static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"><a href="#没有使用-gt-static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类" class="headerlink" title="没有使用&gt;static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"></a>没有使用&gt;static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类</h5><h5 id="对象之前应该先创建外部类对象。"><a href="#对象之前应该先创建外部类对象。" class="headerlink" title="对象之前应该先创建外部类对象。"></a>对象之前应该先创建外部类对象。</h5><h5 id="外部类-out-new-外部类"><a href="#外部类-out-new-外部类" class="headerlink" title="外部类 out = new 外部类();"></a>外部类 out = new 外部类();</h5><h5 id="外部类-内部类-in-out-new-内部类"><a href="#外部类-内部类-in-out-new-内部类" class="headerlink" title="外部类.内部类 in = out.new 内部类();"></a>外部类.内部类 in = out.new 内部类();</h5><h5 id="参考如下代码："><a href="#参考如下代码：" class="headerlink" title="参考如下代码："></a>参考如下代码：</h5><pre><code>class outer{
+<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"><a href="#没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类" class="headerlink" title="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"></a>没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类</h5><h5 id="对象之前应该先创建外部类对象。"><a href="#对象之前应该先创建外部类对象。" class="headerlink" title="对象之前应该先创建外部类对象。"></a>对象之前应该先创建外部类对象。</h5><h5 id="外部类-out-new-外部类"><a href="#外部类-out-new-外部类" class="headerlink" title="外部类 out = new 外部类();"></a>外部类 out = new 外部类();</h5><h5 id="外部类-内部类-in-out-new-内部类"><a href="#外部类-内部类-in-out-new-内部类" class="headerlink" title="外部类.内部类 in = out.new 内部类();"></a>外部类.内部类 in = out.new 内部类();</h5><h5 id="参考如下代码："><a href="#参考如下代码：" class="headerlink" title="参考如下代码："></a>参考如下代码：</h5><pre><code>class outer{
     private String name = &quot;outer&quot;;
     //非静态内部类
     class inner{
@@ -498,7 +384,7 @@ public class InnerDemo {
     }
 
 }
-</code></pre><h3 id="2-静态内部类"><a href="#2-静态内部类" class="headerlink" title="2.静态内部类"></a>2.静态内部类</h3><h4 id="内部类使用了-gt-static修饰，此时内部类属于外部类，也就是说，外部类可以直接调"><a href="#内部类使用了-gt-static修饰，此时内部类属于外部类，也就是说，外部类可以直接调" class="headerlink" title="内部类使用了&gt;static修饰，此时内部类属于外部类，也就是说，外部类可以直接调"></a>内部类使用了&gt;static修饰，此时内部类属于外部类，也就是说，外部类可以直接调</h4><h4 id="用内部类。"><a href="#用内部类。" class="headerlink" title="用内部类。"></a>用内部类。</h4><h4 id="外部类-内部类-in-new-外部类-内部类"><a href="#外部类-内部类-in-new-外部类-内部类" class="headerlink" title="外部类.内部类 in = new 外部类.内部类();"></a>外部类.内部类 in = new 外部类.内部类();</h4><h4 id="参考如下代码：-1"><a href="#参考如下代码：-1" class="headerlink" title="参考如下代码："></a>参考如下代码：</h4><pre><code>class OOuter{
+</code></pre><h3 id="2-静态内部类"><a href="#2-静态内部类" class="headerlink" title="2.静态内部类"></a>2.静态内部类</h3><h4 id="内部类使用了static修饰，此时内部类属于外部类，也就是说，外部类可以直接调"><a href="#内部类使用了static修饰，此时内部类属于外部类，也就是说，外部类可以直接调" class="headerlink" title="内部类使用了static修饰，此时内部类属于外部类，也就是说，外部类可以直接调"></a>内部类使用了static修饰，此时内部类属于外部类，也就是说，外部类可以直接调</h4><h4 id="用内部类。"><a href="#用内部类。" class="headerlink" title="用内部类。"></a>用内部类。</h4><h4 id="外部类-内部类-in-new-外部类-内部类"><a href="#外部类-内部类-in-new-外部类-内部类" class="headerlink" title="外部类.内部类 in = new 外部类.内部类();"></a>外部类.内部类 in = new 外部类.内部类();</h4><h4 id="参考如下代码：-1"><a href="#参考如下代码：-1" class="headerlink" title="参考如下代码："></a>参考如下代码：</h4><pre><code>class OOuter{
     //静态内部类
     //private String name = &quot;CICI&quot;;
     private static int age = 20;
@@ -575,6 +461,120 @@ public class AnonymityDemo {
     }
 }
 </code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/26/我的第一篇博客/" itemprop="url">
+                  我的第一篇博客
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T23:47:46+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>  在经过了几天的折腾后，终于把自己的第一个博客搭建了起来。</p>
+<p>  欢迎大家常来。</p>
+
           
         
       
