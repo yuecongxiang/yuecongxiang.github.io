@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java，class," />
 
 
 
@@ -92,22 +92,49 @@
 
 
 
-<meta name="description" content="关于我一直学习JAVA的小菜鸟，欢迎分享知识
-From: CICI
-QQ:1057811967Weibo:http://www.weibo.com/52721413">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yucongxiang.com/about/index.html">
+<meta name="description" content="JAVA有四个内部类
+非静态内部类
+静态内部类
+局部内部类
+匿名内部类
+
+
+1.非静态内部类没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。参考如下代码：
+`class outer{
+    private String name = &amp;quot;outer&amp;quot;;
+    //非静态内部类
+    class inner{">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA中的内部类">
+<meta property="og:url" content="http://yucongxiang.com/2016/12/26/JAVA中的内部类/index.html">
 <meta property="og:site_name" content="CICI">
-<meta property="og:description" content="关于我一直学习JAVA的小菜鸟，欢迎分享知识
-From: CICI
-QQ:1057811967Weibo:http://www.weibo.com/52721413">
-<meta property="og:updated_time" content="2016-12-26T16:02:15.710Z">
+<meta property="og:description" content="JAVA有四个内部类
+非静态内部类
+静态内部类
+局部内部类
+匿名内部类
+
+
+1.非静态内部类没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。参考如下代码：
+`class outer{
+    private String name = &amp;quot;outer&amp;quot;;
+    //非静态内部类
+    class inner{">
+<meta property="og:updated_time" content="2016-12-28T15:09:19.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="关于我一直学习JAVA的小菜鸟，欢迎分享知识
-From: CICI
-QQ:1057811967Weibo:http://www.weibo.com/52721413">
+<meta name="twitter:title" content="JAVA中的内部类">
+<meta name="twitter:description" content="JAVA有四个内部类
+非静态内部类
+静态内部类
+局部内部类
+匿名内部类
+
+
+1.非静态内部类没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。参考如下代码：
+`class outer{
+    private String name = &amp;quot;outer&amp;quot;;
+    //非静态内部类
+    class inner{">
 
 
 
@@ -125,13 +152,7 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
   };
 </script>
 
-  <title>
-  
-
-  
-    about | CICI
-  
-</title>
+  <title> JAVA中的内部类 | CICI </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -152,7 +173,7 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
     
   
 
-  <div class="container one-collumn sidebar-position-right  ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -275,12 +296,195 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
 
   <div id="posts" class="posts-expand">
     
-    
-      <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p>一直学习JAVA的小菜鸟，欢迎分享知识</p>
-<p>From: CICI</p>
-<p>QQ:1057811967<br>Weibo:<a href="http://www.weibo.com/52721413" target="_blank" rel="external">http://www.weibo.com/52721413</a></p>
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JAVA中的内部类
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T23:47:46+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="JAVA有四个内部类"><a href="#JAVA有四个内部类" class="headerlink" title="JAVA有四个内部类"></a>JAVA有四个内部类</h3><ol>
+<li>非静态内部类</li>
+<li>静态内部类</li>
+<li>局部内部类</li>
+<li>匿名内部类</li>
+</ol>
+<hr>
+<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。"><a href="#没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。" class="headerlink" title="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。"></a>没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。</h5><pre><code>参考如下代码：
+`class outer{
+    private String name = &quot;outer&quot;;
+    //非静态内部类
+    class inner{
+        private String name = &quot;inner&quot;;
+        public void test(){
+            String name = &quot;test&quot;;
+            System.out.println(name);//test
+            System.out.println(this.name);//inner
+            System.out.println(new outer().name);//outer
+            System.out.println(outer.this.name);
+            System.out.println(&quot;\n&quot;);
+        }
+    }
+    public void show(){
+        //this.test();
+        new inner().test();
+    }
+}
+public class InnerDemo {
+    public static void main(String[] args) {
+        new outer().show();
+        //想在外部类之外访问内部类
+        //new outer().new inner().test();
+        outer out = new outer();
+        outer.inner in = out.new inner();
+        in.test();
+    }
+
+}`
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/path/to/wechat-reward-image" alt="Congxiang Yue WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/path/to/alipay-reward-image" alt="Congxiang Yue Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java，class/" rel="tag">#java，class</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/26/我的第一篇博客/" rel="next" title="我的第一篇博客">
+                <i class="fa fa-chevron-left"></i> 我的第一篇博客
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -312,8 +516,17 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -370,6 +583,17 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA有四个内部类"><span class="nav-number">1.</span> <span class="nav-text">JAVA有四个内部类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-非静态内部类"><span class="nav-number">1.1.</span> <span class="nav-text">1.非静态内部类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。"><span class="nav-number">1.1.1.</span> <span class="nav-text">没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -466,6 +690,10 @@ QQ:1057811967Weibo:http://www.weibo.com/52721413">
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

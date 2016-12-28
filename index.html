@@ -284,6 +284,156 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/26/JAVA中的内部类/" itemprop="url">
+                  JAVA中的内部类
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-26T23:47:46+08:00" content="2016-12-26">
+              2016-12-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="JAVA有四个内部类"><a href="#JAVA有四个内部类" class="headerlink" title="JAVA有四个内部类"></a>JAVA有四个内部类</h3><ol>
+<li>非静态内部类</li>
+<li>静态内部类</li>
+<li>局部内部类</li>
+<li>匿名内部类</li>
+</ol>
+<hr>
+<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。"><a href="#没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。" class="headerlink" title="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。"></a>没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对象之前应该先创建外部类对象。</h5><pre><code>参考如下代码：
+`class outer{
+    private String name = &quot;outer&quot;;
+    //非静态内部类
+    class inner{
+        private String name = &quot;inner&quot;;
+        public void test(){
+            String name = &quot;test&quot;;
+            System.out.println(name);//test
+            System.out.println(this.name);//inner
+            System.out.println(new outer().name);//outer
+            System.out.println(outer.this.name);
+            System.out.println(&quot;\n&quot;);
+        }
+    }
+    public void show(){
+        //this.test();
+        new inner().test();
+    }
+}
+public class InnerDemo {
+    public static void main(String[] args) {
+        new outer().show();
+        //想在外部类之外访问内部类
+        //new outer().new inner().test();
+        outer out = new outer();
+        outer.inner in = out.new inner();
+        in.test();
+    }
+
+}`
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/26/我的第一篇博客/" itemprop="url">
                   我的第一篇博客
                 </a>
@@ -418,7 +568,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -426,7 +576,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -435,7 +585,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
