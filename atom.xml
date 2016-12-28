@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yucongxiang.com/"/>
-  <updated>2016-12-28T15:18:08.161Z</updated>
+  <updated>2016-12-28T15:53:10.850Z</updated>
   <id>http://yucongxiang.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yucongxiang.com/2016/12/26/JAVA%E4%B8%AD%E7%9A%84%E5%86%85%E9%83%A8%E7%B1%BB/"/>
     <id>http://yucongxiang.com/2016/12/26/JAVA中的内部类/</id>
     <published>2016-12-26T15:47:46.000Z</published>
-    <updated>2016-12-28T15:18:08.161Z</updated>
+    <updated>2016-12-28T15:53:10.850Z</updated>
     
     <content type="html"><![CDATA[<h3 id="JAVA有四个内部类"><a href="#JAVA有四个内部类" class="headerlink" title="JAVA有四个内部类"></a>JAVA有四个内部类</h3><ol>
 <li>非静态内部类</li>
@@ -29,7 +29,7 @@
 <li>匿名内部类</li>
 </ol>
 <hr>
-<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对"><a href="#没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对" class="headerlink" title="没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对"></a>没有使用static修饰，此时内部类属于外部类的一个对象，也就是说创建内部类对</h5><h5 id="象之前应该先创建外部类对象。"><a href="#象之前应该先创建外部类对象。" class="headerlink" title="象之前应该先创建外部类对象。"></a>象之前应该先创建外部类对象。</h5><h5 id="参考如下代码："><a href="#参考如下代码：" class="headerlink" title="参考如下代码："></a>参考如下代码：</h5><pre><code>class outer{
+<h4 id="1-非静态内部类"><a href="#1-非静态内部类" class="headerlink" title="1.非静态内部类"></a>1.非静态内部类</h4><h5 id="没有使用修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"><a href="#没有使用修饰，此时内部类属于外部类的一个对象，也就是说创建内部类" class="headerlink" title="没有使用修饰，此时内部类属于外部类的一个对象，也就是说创建内部类"></a>没有使用<static>修饰，此时内部类属于外部类的一个对象，也就是说创建内部类</static></h5><h5 id="对象之前应该先创建外部类对象。"><a href="#对象之前应该先创建外部类对象。" class="headerlink" title="对象之前应该先创建外部类对象。"></a>对象之前应该先创建外部类对象。</h5><h5 id="外部类-out-new-外部类"><a href="#外部类-out-new-外部类" class="headerlink" title="外部类 out = new 外部类();"></a>外部类 out = new 外部类();</h5><h5 id="外部类-内部类-in-out-new-内部类"><a href="#外部类-内部类-in-out-new-内部类" class="headerlink" title="外部类.内部类 in = out.new 内部类();"></a>外部类.内部类 in = out.new 内部类();</h5><h5 id="参考如下代码："><a href="#参考如下代码：" class="headerlink" title="参考如下代码："></a>参考如下代码：</h5><pre><code>class outer{
     private String name = &quot;outer&quot;;
     //非静态内部类
     class inner{
@@ -58,6 +58,82 @@ public class InnerDemo {
         in.test();
     }
 
+}
+</code></pre><h3 id="2-静态内部类"><a href="#2-静态内部类" class="headerlink" title="2.静态内部类"></a>2.静态内部类</h3><h4 id="内部类使用了修饰，此时内部类属于外部类，也就是说，外部类可以直接调"><a href="#内部类使用了修饰，此时内部类属于外部类，也就是说，外部类可以直接调" class="headerlink" title="内部类使用了修饰，此时内部类属于外部类，也就是说，外部类可以直接调"></a>内部类使用了<static>修饰，此时内部类属于外部类，也就是说，外部类可以直接调</static></h4><h4 id="用内部类。"><a href="#用内部类。" class="headerlink" title="用内部类。"></a>用内部类。</h4><h4 id="外部类-内部类-in-new-外部类-内部类"><a href="#外部类-内部类-in-new-外部类-内部类" class="headerlink" title="外部类.内部类 in = new 外部类.内部类();"></a>外部类.内部类 in = new 外部类.内部类();</h4><h4 id="参考如下代码：-1"><a href="#参考如下代码：-1" class="headerlink" title="参考如下代码："></a>参考如下代码：</h4><pre><code>class OOuter{
+    //静态内部类
+    //private String name = &quot;CICI&quot;;
+    private static int age = 20;
+    static class IInner{
+        public void test(){
+            //静态内部类不能直接访问外部类的非静态成员
+            System.out.println(&quot;test&quot;);
+            //System.out.println(name);
+            System.out.println(age);
+        }
+    }
+    public void show(){
+        new IInner().test();
+    }
+}
+public class InnerDemo2 {
+    public static void main(String[] args) {
+        new OOuter().show();
+        //在外部类访问内部类
+        new OOuter.IInner().test();
+    }
+
+}
+</code></pre><h3 id="3-局部内部类"><a href="#3-局部内部类" class="headerlink" title="3.局部内部类"></a>3.局部内部类</h3><h4 id="在方法里创建类-局部内部类不能加任何访问修饰符，因为它只对局部块有效。"><a href="#在方法里创建类-局部内部类不能加任何访问修饰符，因为它只对局部块有效。" class="headerlink" title="在方法里创建类,局部内部类不能加任何访问修饰符，因为它只对局部块有效。"></a>在方法里创建类,局部内部类不能加任何访问修饰符，因为它只对局部块有效。</h4><h4 id="特别注意：jdk1-8之前，局部内部类只能访问final修饰的局部变量。"><a href="#特别注意：jdk1-8之前，局部内部类只能访问final修饰的局部变量。" class="headerlink" title="特别注意：jdk1.8之前，局部内部类只能访问final修饰的局部变量。"></a>特别注意：jdk1.8之前，局部内部类只能访问final修饰的局部变量。</h4><h4 id="jdk1-8之后（包括1-8）不需要final修饰，也可以访问。"><a href="#jdk1-8之后（包括1-8）不需要final修饰，也可以访问。" class="headerlink" title="jdk1.8之后（包括1.8）不需要final修饰，也可以访问。"></a>jdk1.8之后（包括1.8）不需要final修饰，也可以访问。</h4><h4 id="参考如下代码"><a href="#参考如下代码" class="headerlink" title="参考如下代码:"></a>参考如下代码:</h4><pre><code>class LocalClass{
+    private int age = 17;
+    //局部内部类
+    public void show(boolean b){
+        String name = &quot;CICI&quot;;
+        class Local{
+            public void test(){
+                System.out.println(b +&quot;&quot; +age + &quot;---&gt;&quot; + name);
+            }
+        }
+        new Local().test();
+    }
+}
+public class LocalClassDemo {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        new LocalClass().show(false);;
+    }
+
+}
+</code></pre><h3 id="4-匿名内部类"><a href="#4-匿名内部类" class="headerlink" title="*4.匿名内部类"></a>*4.匿名内部类</h3><h4 id="这是局部内部类的一个特殊，没有名字的局部内部类，只能使用一次。"><a href="#这是局部内部类的一个特殊，没有名字的局部内部类，只能使用一次。" class="headerlink" title="这是局部内部类的一个特殊，没有名字的局部内部类，只能使用一次。"></a>这是局部内部类的一个特殊，没有名字的局部内部类，只能使用一次。</h4><h4 id="不能是抽象类，没有构造方法。"><a href="#不能是抽象类，没有构造方法。" class="headerlink" title="不能是抽象类，没有构造方法。"></a>不能是抽象类，没有构造方法。</h4><h4 id="声明和构造匿名内部类的一般格式如下："><a href="#声明和构造匿名内部类的一般格式如下：" class="headerlink" title="声明和构造匿名内部类的一般格式如下："></a>声明和构造匿名内部类的一般格式如下：</h4><pre><code>new 父类(参数){ /* 覆写父类的方法 */ }
+new 接口(){ /* 覆写接口的方法 */ }
+</code></pre><h4 id="一旦一个方法需要一个对象的时候，而该对象有父类或接口的时候，就可以使用，但"><a href="#一旦一个方法需要一个对象的时候，而该对象有父类或接口的时候，就可以使用，但" class="headerlink" title="一旦一个方法需要一个对象的时候，而该对象有父类或接口的时候，就可以使用，但"></a>一旦一个方法需要一个对象的时候，而该对象有父类或接口的时候，就可以使用，但</h4><h4 id="只能使用一次。"><a href="#只能使用一次。" class="headerlink" title="只能使用一次。"></a>只能使用一次。</h4><h4 id="参考如下代码-1"><a href="#参考如下代码-1" class="headerlink" title="参考如下代码:"></a>参考如下代码:</h4><pre><code>interface IUSB{
+    void run();
+}
+class MouseUSBImpl implements IUSB{
+    public void run(){
+        System.out.println(&quot;鼠标&quot;);
+    };
+}
+class PC{
+    public void plugIn(IUSB usb){
+        usb.run();
+    }
+}
+public class AnonymityDemo {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        IUSB usb = new MouseUSBImpl();
+        PC pc = new PC();
+        pc.plugIn(usb);
+        //若一个类只使用一次的话，我们可以考虑使用匿名内部类完成
+        String name = &quot;CICI&quot;;
+        pc.plugIn(new IUSB(){
+            public void run(){
+                System.out.println(&quot;HAHA&quot;+name);
+            };
+        });
+    }
 }
 </code></pre>]]></content>
     
